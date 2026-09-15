@@ -1,0 +1,104 @@
+/* Element selector, custom colors, and typography */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #1f2937;
+    margin: 0;
+}
+
+
+/* Custom navbar color */
+.navbar-custom {
+    background-color: #0b2545;
+}
+
+
+/* Margin and padding */
+main {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 1000px;
+}
+
+
+/* Block-style page titles */
+h1 {
+    background-color: #0b2545;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+
+/* RClass selector and box-model properties */
+.hobby-card {
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+
+/* Class selector, border radius, and shadow */
+.project-card {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Basic image sizing */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #0b2545;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+footer a {
+    color: white;
+}
+
+
+/* Overrides Bootstrap's default .btn-primary colors. */
+.btn-primary {
+    background-color: #0b2545;
+    border-color: #0b2545;
+}
+
+
+/* Keeps custom button color when hovering */
+.btn-primary:hover {
+    background-color: #163b65;
+    border-color: #163b65;
+}
+
+
+h2 {
+    color: #0b2545;
+    font-weight: 700;
+    border-left: 5px solid #3b82f6;
+    padding-left: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.resume-section {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #d1d5db;
+}
+
+
+p {
+    color: #4b5563;
+    line-height: 1.7;
+}
