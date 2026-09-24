@@ -58,12 +58,13 @@ function saveEvent() {
 
     if (editingIndex===null) {
         events.push(eventDetails);
+        addEventToCalendarUI(eventDetails);
     }
     else {
         events[editingIndex] = eventDetails;
         editingIndex = null;
+        displayAllEvents();
     }
-    displayAllEvents();
 
     const modalElement = document.getElementById('event_modal');
     const modal = bootstrap.Modal.getOrCreateInstance(modalElement);
@@ -96,6 +97,7 @@ function createEventCard(eventDetails) {
         eventContent.innerHTML = `
             <strong>${eventDetails.name}</strong><br>
             Time: ${eventDetails.time}<br>
+            Category: ${eventDetails.category}<br>
             Modality: ${eventDetails.modality}<br>
             URL: ${eventDetails.remote_url}<br>
             Attendees: ${eventDetails.attendees}
@@ -104,6 +106,7 @@ function createEventCard(eventDetails) {
         eventContent.innerHTML = `
             <strong>${eventDetails.name}</strong><br>
             Time: ${eventDetails.time}<br>
+            Category: ${eventDetails.category}<br>
             Modality: ${eventDetails.modality}<br>
             Location: ${eventDetails.location}<br>
             Attendees: ${eventDetails.attendees}
